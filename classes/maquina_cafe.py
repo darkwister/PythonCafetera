@@ -42,12 +42,6 @@ class MaquinaCafe:
         if size is None:
             return "No se pudo determinar el tamaño del vaso."
 
-        # cant_cafe = int(input(f"☕ ¿Cuántos ml de café desea en su vaso de {size}oz?: "))
-        # if self.cafe.has_cafe(cant_cafe) and cant_cafe > 0 and cant_cafe > self.cafe.cant_cafe * 30:
-        #     self.cafe.give_cafe(cant_cafe)
-        # else:
-        #     return "❌ No hay suficiente café."
-
         while True:
             try:
                 cant_cafe = int(input(f"Cuantos ml de cafe desea en su vaso de {size}oz?: "))
@@ -71,4 +65,4 @@ class MaquinaCafe:
             else:
                 return "No hay suficiente azúcar."
 
-        return f"Vaso {size}oz con {cant_cafe}ml de café y {cant_azucar}g de azúcar servido. \n\tDisfrute su café!"
+        return f"✅ Vaso {size}oz con {cant_cafe}ml de café y {cant_azucar}g de azúcar servido. \n\tDisfrute su café!"
