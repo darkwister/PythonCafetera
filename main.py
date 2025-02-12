@@ -3,10 +3,10 @@ from classes.maquina_cafe import MaquinaCafe
 def main():
     print(" ¡Bienvenido a la Máquina de Café! ")
 
-    maquina = MaquinaCafe()  # Instancia de la máquina de café
+    maquina = MaquinaCafe()
 
     while True:
-        print("\n MENÚ PRINCIPAL")
+        print("\n\t MENÚ PRINCIPAL")
         print("1. Servir café")
         print("2. Salir")
 

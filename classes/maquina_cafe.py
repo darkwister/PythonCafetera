@@ -1,55 +1,7 @@
 from classes.cafetera import Cafetera
 from classes.vaso import VasoFactory
 from classes.azucarero import Azucarero
-#
-# class maquina_cafe:
-#     def __init__(self):
-#         self.cafe = Cafetera(1000)
-#         self.vasos_small = Vaso(8)
-#         self.vasos_medium = Vaso(12)
-#         self.vasos_big = Vaso(16)
-#         self.azucar = Azucarero(500)
-#
-#     def dar_vaso(self):
-#         print("\tELIGE QUE VASO DESEA \n(Se le suplira un vaso)")
-#         print("1.Vaso pequeño 8oz")
-#         print("2.Vaso mediano 12oz")
-#         print("3.Vaso grande 16oz")
-#
-#         opc = int(input("Opción: "))
-#
-#         if opc == 1:
-#             return self.vasos_small.give_vaso(1)
-#         elif opc == 2:
-#             return self.vasos_medium.give_vaso(1)
-#         elif opc == 3:
-#             return self.vasos_big.give_vaso(1)
-#         else:
-#             print("Opción inválida")
-#             return None
-#
-#     # def dar_vaso_con_cafe(self):
-#     #     vaso = self.dar_vaso()
-#     #     if vaso is None:
-#     #         return "No tienes un vaso"
-#     #
-#     #     cant_cafe = int(input(f"Cuantos ml de café desea en su vaso de {vaso.cant_contenido}oz?: "))
-#     #     self.cafe.give_cafe(cant_cafe)
-#     #
-#     #     opc_azucar = input("Desea agregar azucar? (s/n): ").strip().lower()
-#     #
-#     #     if opc_azucar == "s":
-#     #         cant_azucar = int(input("Cuantos gramos de azucar desea?: "))
-#     #
-#     #         if self.azucar.has_azucar(cant_azucar):
-#     #             self.azucar.give_azucar(cant_azucar)
-#     #         else:
-#     #             print("No hay suficiente azúcar.")
-#     #             return
-#     #     elif opc_azucar == "n":
-#     #         return "Sin azucar entendido!"
-#     #     else:
-#     #         return "Esta opcion no es valida, se servia sin azucar"
+
 class MaquinaCafe:
     def __init__(self):
         self.cafe = Cafetera(1000)
@@ -113,10 +65,10 @@ class MaquinaCafe:
         opc_azucar = input("Desea agregar azúcar? (s/n): ").strip().lower()
         cant_azucar = 0
         if opc_azucar == "s":
-            cant_azucar = int(input("Cuantos gramos de azucar desea?: "))
+            cant_azucar = int(input("Cuantos gramos de azúcar desea?: "))
             if self.azucar.has_azucar(cant_azucar) and cant_azucar > 0:
                 self.azucar.give_azucar(cant_azucar)
             else:
-                return "No hay suficiente azucar."
+                return "No hay suficiente azúcar."
 
-        return f"Vaso {size}oz con {cant_cafe}ml de café y {cant_azucar}g de azucar servido. \n\tDisfrute su café!"
+        return f"Vaso {size}oz con {cant_cafe}ml de café y {cant_azucar}g de azúcar servido. \n\tDisfrute su café!"

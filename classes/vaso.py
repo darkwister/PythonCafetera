@@ -1,28 +1,3 @@
-# class Vaso:
-#
-#     def __init__(self, cant_contenido):
-#         self.cant_vaso = 10
-#         self.cant_contenido = cant_contenido
-#
-#     @property
-#     def cant_vaso(self):
-#         return self._cant_vaso
-#
-#     @cant_vaso.setter
-#     def cant_vaso(self, value):
-#         if value < 0:
-#             raise ValueError("La cantidad de vasos no puede ser negativa.")
-#         self._cant_vaso = value
-#
-#     def has_vaso(self, value):
-#         return self._cant_vaso > value
-#
-#     def give_vaso(self, cant_vaso):
-#         if self.has_vaso(cant_vaso):
-#             self.cant_vaso -= cant_vaso
-#             return f"Suplidos {cant_vaso} vasos"
-#         else: return "No hay mas vasos"
-
 class Vaso:
     def __init__(self, capacidad_oz):
         self.capacidad_oz = capacidad_oz
@@ -31,10 +6,6 @@ class Vaso:
     @property
     def stock(self):
         return self._stock
-
-    # def restock(self,cant):
-    #     self._stock += cant
-    #     return self._stock
 
     @stock.setter
     def stock(self, value):

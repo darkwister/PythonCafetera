@@ -18,4 +18,4 @@ class Azucarero:
 
     def give_azucar(self, cant_pedida):
         if self.has_azucar(cant_pedida): self.cant_azucar -= cant_pedida
-        else: return "No hay suficiente azucar"
+        else: return "No hay suficiente azúcar"
