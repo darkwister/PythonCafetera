@@ -31,6 +31,3 @@ class VasoFactory:
         if size in sizes:
             return Vaso(size)
         raise ValueError("❌ Tamaño de vaso no disponible.")
-
-
-

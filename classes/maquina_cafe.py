@@ -53,7 +53,7 @@ class MaquinaCafe:
                     break
             except ValueError:
                 print("Entrada invalida. Ingrese un numero valido.")
-
+        #Probando el CI
         self.cafe.give_cafe(cant_cafe)
 
         opc_azucar = input("Desea agregar azúcar? (s/n): ").strip().lower()
